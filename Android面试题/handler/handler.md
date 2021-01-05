@@ -2,3 +2,5 @@
 
 #### [你真的懂Handler吗？Handler问答](https://juejin.cn/post/6844903624510799886)
 
+#### [23讲：handler](https://github.com/Mut1/Android-BAT-Project/blob/main/Android%E8%BF%9B%E9%98%B6%E8%AF%BE%E7%A8%8B/23%E8%AE%B2%EF%BC%9Ahandler.md)
+
