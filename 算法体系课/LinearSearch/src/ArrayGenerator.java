@@ -1,4 +1,11 @@
-package PACKAGE_NAME;
+public class ArrayGenerator  {
+    private ArrayGenerator(){}
 
-public class ArrayGenerator {
+    public static Integer[] generateOrderArray(int n){
+        Integer[] arr=new Integer[n];
+        for (int i = 0; i < n; i++) {
+            arr[i]=i;
+        }
+        return arr;
+    }
 }

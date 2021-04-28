@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P215数组中的第K个最大元素.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P215数组中的第K个最大元素.java" />
+              <option name="questionId" value="215" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P75颜色分类.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P75颜色分类.java" />
+              <option name="questionId" value="75" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P剑指 Offer 40最小的k个数.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P剑指 Offer 40最小的k个数.java" />
+              <option name="questionId" value="100301" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P剑指 Offer 51数组中的逆序对.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P剑指 Offer 51数组中的逆序对.java" />
+              <option name="questionId" value="100318" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P面试题 17.14最小K个数.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P面试题 17.14最小K个数.java" />
+              <option name="questionId" value="1000021" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
