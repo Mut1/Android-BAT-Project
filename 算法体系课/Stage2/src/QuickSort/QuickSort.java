@@ -11,6 +11,7 @@ public class QuickSort {
     private QuickSort() {
     }
 
+    //单路快速
     public static <E extends Comparable<E>> void sort(E[] arr) {
         Random rnd = new Random();
         sort(arr, 0, arr.length - 1, rnd);

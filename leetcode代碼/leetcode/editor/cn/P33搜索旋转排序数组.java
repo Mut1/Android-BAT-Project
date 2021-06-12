@@ -47,17 +47,40 @@ package com.leetcode.editor.cn;
 // Related Topics 数组 二分查找 
 // 👍 1325 👎 0
 
-public class P33SearchInRotatedSortedArray{
+public class P33SearchInRotatedSortedArray {
     public static void main(String[] args) {
         Solution solution = new P33SearchInRotatedSortedArray().new Solution();
         // TO TEST
     }
-    //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public int search(int[] nums, int target) {
 
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+        public int search(int[] nums, int target) {
+            //两次二分  第一次 查找旋转点  第二次查找target
+            int l = 0, r = nums.length - 1;
+            while (l < r) {  //寻找旋转点
+                int mid = l + r + 1 >> 1;
+                if (nums[mid] >= nums[0])    //最后一个大于nums[0]的点
+                    l = mid;
+                else
+                    r = mid - 1;
+            }
+            if (target < nums[0]) {  //确定target在旋转数组哪个区间
+                l = r + 1;
+                r = nums.length - 1;
+            } else
+                l = 0;
+            while (l < r) {  //简单二分查找
+                int mid = l + r >> 1;
+                if (nums[mid] >= target)
+                    r = mid;
+                else
+                    l = mid + 1;
+            }
+            return nums[r] == target ? r : -1;  //如果没找到返回-1，找到返回r
+
+        }
     }
-}
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
