@@ -11,6 +11,30 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P1038把二叉搜索树转换为累加树.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P1038把二叉搜索树转换为累加树.java" />
+              <option name="questionId" value="1114" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P114二叉树展开为链表.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P114二叉树展开为链表.java" />
+              <option name="questionId" value="114" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P116填充每个节点的下一个右侧节点指针.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P116填充每个节点的下一个右侧节点指针.java" />
+              <option name="questionId" value="116" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P153寻找旋转排序数组中的最小值.java">
           <value>
             <LeetcodeEditor>
@@ -67,11 +91,35 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P226翻转二叉树.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P226翻转二叉树.java" />
+              <option name="questionId" value="226" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P230二叉搜索树中第K小的元素.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P230二叉搜索树中第K小的元素.java" />
+              <option name="questionId" value="230" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P240搜索二维矩阵II.java">
           <value>
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P240搜索二维矩阵II.java" />
               <option name="questionId" value="240" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P25K个一组翻转链表.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P25K个一组翻转链表.java" />
+              <option name="questionId" value="25" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -136,6 +184,38 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P50Pow(x,N).java" />
               <option name="questionId" value="50" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P538把二叉搜索树转换为累加树.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P538把二叉搜索树转换为累加树.java" />
+              <option name="questionId" value="538" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P652寻找重复的子树.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P652寻找重复的子树.java" />
+              <option name="questionId" value="652" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P654最大二叉树.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P654最大二叉树.java" />
+              <option name="questionId" value="654" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P655输出二叉树.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../../leetcode代碼/leetcode/editor/cn/P655输出二叉树.java" />
+              <option name="questionId" value="655" />
             </LeetcodeEditor>
           </value>
         </entry>

@@ -61,17 +61,30 @@ public class P98ValidateBinarySearchTree {
      */
     class Solution {
         //注意点：pre定义的位置
-        long pre = Long.MIN_VALUE;
+        //long pre = Long.MIN_VALUE;
         public boolean isValidBST(TreeNode root) {
-            if (root == null)
-                return true;
-            //中序遍历后一个节点比前一个节点值大
-            if (!isValidBST(root.left))
-                return false;
-            if (root.val <= pre)
-                return false;
-            pre = root.val;
-            return isValidBST(root.right);
+            return isValidBST(root, null, null);
+//            if (root == null)
+//                return true;
+//            //中序遍历后一个节点比前一个节点值大
+//            if (!isValidBST(root.left))
+//                return false;
+//            if (root.val <= pre)
+//                return false;
+//            pre = root.val;
+//            return isValidBST(root.right);
+        }
+
+        //判断节点左子树小于  右子树大于
+        /* 限定以 root 为根的子树节点必须满足 max.val > root.val > min.val */
+        boolean isValidBST(TreeNode root, TreeNode min, TreeNode max) {
+            if (root == null) return true;
+            // 若 root.val 不符合 max 和 min 的限制，说明不是合法 BST
+            if (min != null && root.val <= min.val) return false;
+            if (max != null && root.val >= max.val) return false;
+
+// 限定左子树的最大值是 root.val，右子树的最小值是 root.val
+            return isValidBST(root.left, min, root) && isValidBST(root.right, root, max);
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

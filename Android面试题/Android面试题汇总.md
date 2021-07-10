@@ -1,4 +1,4 @@
-# 1.Activity
+## 1.Activity
 
 #### 1.1生命周期
 
@@ -45,3 +45,35 @@ activity四种启动模式：Standard、SingleTop、SingleTask和SingleInstance
 **6.Launcher启动**：被SystemServer进程启动的AMS会启动Launcher，Launcher启动后会将已安装应用的快捷图标显示到系统桌面上。
 
 Launcher进程启动后，就会调用activity的启动了。首先，Launcher会调用ActivityTaskManagerService，然后ActivityTaskManagerService会调用ApplocationThread，然后ApplicationThread再通过ActivityThread启动Activity。
+
+## 2.Fragment
+
+### 2.1简介
+
+fragment有如下几个核心的类：
+
+- Fragment：Fragment的基类，任何创建的Fragment都需要继承该类。
+- FragmentManager：管理和维护Fragment。抽象类，具体的实现类是FragmentManagerImpl。
+- FragmentTransaction：对Frgament的添加、删除等操作都需要通过事务方式进行。抽象类，具体实现类是BackStackRecord。
+
+### 2.2生命周期
+
+Fragment必须是依存于Activity而存在的，因此Activity的生命周期会直接影响到Fragment的生命周期。相比于Activity的生命周期，Fragment的生命周期如下所示。
+
+- onAttach()：Fragment和Activity相关联时调用。如果不是一定要使用具体的宿主Activity对象的话，可以使用这个方法或者getContext()获取Context对象，用于解决Context上下文引用的问题。同时还可以在此方法中通过getArgument()获取到需要在Fragment创建时需要的参数。
+- onCreate()：Fragment被创建时调用。
+- onCreateView()：创建Fragment的布局。
+- onActivityCreated()：当Activity完成oncreate()时调用。
+- onStart():当Fragment可见时调用。
+- onResume():当Fragment可见且可交互时调用
+- onPause():当Fragment不可交互但可见时调用
+- onStop():当Fragment不可见时调用
+- onDestroyView():当Fragment的UI从视图结构中移除时调用
+- onDestroy():销毁Fragment时调用
+- onDetach():当Fragment和Activity解除关联时调用。
+
+#### 2.3与Activity传递数据
+
+##### 2.3.1Fragment向Activity传递数据
+
+首先，
