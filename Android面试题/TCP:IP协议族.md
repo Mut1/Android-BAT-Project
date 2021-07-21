@@ -57,7 +57,7 @@ HTTP连接最显著的特点**是客户端发送的每次请求都需要服务�
 
 TCP连接需要经过“三次握手”，断开连接需要经过“四次挥手”。
 
-<img src="图片/TCP:IP协议族.assets/1" alt="img" style="zoom:50%;" />
+<img src="https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/1" style="zoom:50%;" />
 
 #### Socket连接
 

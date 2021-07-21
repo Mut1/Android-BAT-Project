@@ -166,7 +166,7 @@ Handler.dispatchMessage
 
 - 使用独享的Looper     handlerThread
 
-  <img src="图片/Handler.assets/image-20210719184418119.png" alt="image-20210719184418119" style="zoom:50%;" />
+  <img src="https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/image-20210719184418119.png" style="zoom:50%;" />
 
 
 

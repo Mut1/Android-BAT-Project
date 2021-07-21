@@ -6,11 +6,11 @@ HyperText Transfer Protocol 超文本传输协议
 
 #### 报文格式：Request
 
-<img src="图片/Untitled.assets/image-20210718131959397.png" alt="image-20210718131959397" style="zoom:50%;" />
+<img src="https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/image-20210718131959397.png" style="zoom:50%;" />
 
 #### 报文格式：Response
 
-<img src="图片/Untitled.assets/image-20210718132111160.png" alt="image-20210718132111160" style="zoom:50%;" />
+<img src="https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/image-20210718132111160.png" style="zoom:50%;" />
 
 #### 请求方法
 

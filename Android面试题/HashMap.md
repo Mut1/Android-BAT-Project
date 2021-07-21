@@ -60,7 +60,7 @@ HashMap是基于hashing的原理，我们使用put(key, value)存储对象到Has
 
 ##### 5. HashMap中put()的工作原理
 
-<img src="图片/HashMap.assets/image-20210715235235421.png" alt="image-20210715235235421" style="zoom:66%;" />
+![](https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/image-20210715235235421.png)
 
 ##### 6.HashMap 的底层数组长度为何总是2的n次方
 
@@ -89,7 +89,7 @@ HashMap根据用户传入的初始化容量，利用无符号右移和按位或�
 
 元素在重新计算hash之后，因为n变为2倍，那么n-1的mask范围在高位多1bit(红色)，因此新的index就会发生这样的变化：
 
-<img src="图片/HashMap.assets/image-20210716000207859.png" alt="image-20210716000207859" style="zoom:50%;" />
+<img src="https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/image-20210716000207859.png" style="zoom:50%;" />
 
 因此，我们在扩充HashMap的时候，不需要像JDK1.7的实现那样重新计算hash，只需要看看原来的hash值新增的那个bit是1还是0就好了，是0的话索引没变，是1的话索引变成“原索引+oldCap” 
 
@@ -97,7 +97,7 @@ HashMap根据用户传入的初始化容量，利用无符号右移和按位或�
 
 ##### 阿里面试题
 
-![image-20210716000533795](图片/HashMap.assets/image-20210716000533795.png)
+<img src="https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/image-20210716000533795.png" style="zoom:50%;" />
 
 ##### 常见面试题
 
