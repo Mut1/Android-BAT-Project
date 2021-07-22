@@ -1,6 +1,6 @@
-## 1.Activity
+### 1.Activity
 
-### 1.1生命周期
+#### 1.1生命周期
 
 - onCreate：表示activity正在被创建
 - onRestart：表示activity正在被重新启动
@@ -17,7 +17,7 @@
 - 当回到原来Activity时：onRestart->onStart->onResume;
 - 当按下返回键：onPause->onStop->onDestroy
 
-### 1.2启动模式
+#### 1.2启动模式
 
 activity四种启动模式：Standard、SingleTop、SingleTask和SingleInstance
 
@@ -26,7 +26,7 @@ activity四种启动模式：Standard、SingleTop、SingleTask和SingleInstance
 - **SingleTask：**栈内复用模式。升级版SingleTop，如果栈内有实例，则复用，并会降该实例之上的activity全部清除。
 - **SingleInstance：**系统会为它创建一个单独的任务栈，并且这个实例独立运行在一个task中，这个task只有这个实例，不允许有别的activity存在（可以理解为手机内只有一个）
 
-### 1.3启动流程
+#### 1.3启动流程
 
 在理解activity的启动流程之前，先让我们来看一下Android系统启动流程。总的来说，Android系统启动流程的主要经历init进程->Zygote进程->SystemServer进程->各种系统服务->应用进程等阶段。
 
@@ -44,7 +44,7 @@ activity四种启动模式：Standard、SingleTop、SingleTask和SingleInstance
 
 Launcher进程启动后，就会调用activity的启动了。首先，Launcher会调用ActivityTaskManagerService，然后ActivityTaskManagerService会调用ApplocationThread，然后ApplicationThread再通过ActivityThread启动Activity。
 
-### 1.4切换横竖屏
+#### 1.4切换横竖屏
 
 - 动态切换横竖屏 setRequestedOrientation(Activityinfo.SCREEN_ORIENTATION_LANDSCAPE(PORTRAIT));
   
@@ -73,7 +73,7 @@ Launcher进程启动后，就会调用activity的启动了。首先，Launcher�
    - 竖屏->横屏/横屏-->竖屏
      
       onConfigChanged-->
-### 1.5tips
+#### 1.5tips
 - 当前Activity产生事件弹出Toast和AlertDIalog的时候Activity的生命周期不会有改变
 
 - Activity运行时按下HOME键（跟被完全覆盖一样）
@@ -84,7 +84,7 @@ Launcher进程启动后，就会调用activity的启动了。首先，Launcher�
 
   onPause-->onResume
 
-### 1.6Android怎么加速启动Activity？
+#### 1.6Android怎么加速启动Activity？
 - onCreate()中不执行耗时操作
   把页面显示的 View 细分一下，放在 AsyncTask 里逐步显示，用 Handler 更好。这样用户的看到的就是有层次有步骤的一个个的 View 的展示，不会是先看到一个黑屏，然后一下显示所有 View。最好做成动画，效果更自然。
 
@@ -93,7 +93,7 @@ Launcher进程启动后，就会调用activity的启动了。首先，Launcher�
 - 提高Adapter和AdapterView的效率
 - ⭐️优化布局文件
 
-### [1.7优化布局文件](https://juejin.cn/post/6844903657310257159#heading-8)
+#### [1.7优化布局文件](https://juejin.cn/post/6844903657310257159#heading-8)
 
 - 删除布局中无用的控件和层级
 
@@ -121,9 +121,9 @@ Launcher进程启动后，就会调用activity的启动了。首先，Launcher�
   - LinearLayout分割线    android:divider="@drawable/divider_line"
   - TextView的行间距和占位符的使用
 
-## 2.Fragment
+### 2.Fragment
 
-### 2.1简介
+#### 2.1简介
 
 fragment有如下几个核心的类：
 
@@ -131,7 +131,7 @@ fragment有如下几个核心的类：
 - FragmentManager：管理和维护Fragment。抽象类，具体的实现类是FragmentManagerImpl。
 - FragmentTransaction：对Frgament的添加、删除等操作都需要通过事务方式进行。抽象类，具体实现类是BackStackRecord。
 
-### 2.2生命周期
+#### 2.2生命周期
 
 Fragment必须是依存于Activity而存在的，因此Activity的生命周期会直接影响到Fragment的生命周期。相比于Activity的生命周期，Fragment的生命周期如下所示。
 
@@ -147,34 +147,35 @@ Fragment必须是依存于Activity而存在的，因此Activity的生命周期�
 - onDestroy():销毁Fragment时调用
 - onDetach():当Fragment和Activity解除关联时调用。
 
-### 2.3与Activity传递数据
+#### 2.3与Activity传递数据
 
-#### 2.3.1Fragment向Activity传递数据
+##### 2.3.1Fragment向Activity传递数据
 
 首先，
+##### 2.4Fragment[[懒加载]]
 
-## 3.Contex
+### 3.Contex
 
-### 1.关于getContext()、getApplication()、getApplicationContext()、getActivity()的区别：
+#### 1.关于getContext()、getApplication()、getApplicationContext()、getActivity()的区别：
 
 1. getContext():获取到当前对象的上下文。
 2. getApplication():获得Application的对象
 3. getApplicationContext():获得应用程序的上下文。有且仅有一个相同的对象。生命周期随着应用程序的摧毁而销毁。
 4. getActivity():获得Fragment依附的Activity对象。Fragment里边的getActivity()不推荐使用原因如下：这个方法会返回当前Fragment所附加的Activity，当Fragment生命周期结束并销毁时，getActivity()返回的是null，所以在使用时要注意判断null或者捕获空指针异常。所以只要判断getActivity()为空，就可以不再执行下面的代码，这完全不影响业务的使用。
 
-### 2.一个应用程序有几你们 个Context？
+#### 2.一个应用程序有几你们 个Context？
 
 Context数量=Activity数量+Service数量+1
 
-### 3.Context能干什么？
+#### 3.Context能干什么？
 
 比如：弹出Toast、启动Activity、启动Service、发送广播、操作数据库等等都需要用到Context。
 
-### 4.Context作用域？
+#### 4.Context作用域？
 
 一句话总结：凡是跟UI相关的，都应该使用Activity做为Context来处理；其他的一些操作，Service,Activity,Application等实例都可以，当然了，注意Context引用的持有，防止内存泄漏。
 
-### 5.如何获取Context?
+#### 5.如何获取Context?
 
 通常我们想要获取Context对象，主要有以下四种方法
 
@@ -183,7 +184,7 @@ Context数量=Activity数量+Service数量+1
 3. ContextWrapper.getBaseContext():用来获取一个ContextWrapper进行装饰之前的Context，可以使用这个方法，这个方法在实际开发中使用并不多，也不建议使用。
 4. Activity.this 返回当前的Activity实例，如果是UI控件需要使用Activity作为Context对象，但是默认的Toast实际上使用ApplicationContext也可以。
 
-#### **getApplication()和getApplicationContext()**
+##### **getApplication()和getApplicationContext()**
 
 <img src="https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/1240.jpeg" style="zoom:50%;" />
 
@@ -192,7 +193,7 @@ Application本身就是一个Context，所以这里获取getApplicationContext()
 - getApplication只有在Activity和Service中才能调用的到。
 - 在一些其它的场景，比如BroadcastReceiver中也想获得Application的实例，这时就可以借助getApplicationContext()方法了。
 
-### Context引起的内存泄露
+#### Context引起的内存泄露
 
 **错误的单例模式**
 
@@ -215,7 +216,7 @@ public class MainActivity extends Activity {
 
 有一个静态的Drawable对象，当ImageView设置这个Drawable时，ImageView保存了mDrawable的引用，而ImageView传入的this是MainActivity的mContext，因为被static修饰的mDrawable是常驻内存的，MainActivity是它的间接引用，MainActivity被销毁时，也不能被GC掉，所以造成内存泄漏。
 
-### **正确使用Context**
+#### **正确使用Context**
 
 一般Context造成的内存泄露，几乎都是当Context销毁的时候，却因为被引用导致销毁失败，而Application的Context对象可以理解为随着进程存在的，所以可以总结出使用Context的正确姿势：
 
@@ -223,13 +224,13 @@ public class MainActivity extends Activity {
 2. 不要让生命周期长于Activity的对象持有到Activity的引用
 3. 尽量不要在Activity中使用非静态内部类，因为非静态内部类会隐式持有外部类实例的引用，如果使用静态内部类，将外部实例引用作为弱引用持有。
 
-### Tips：
+#### Tips：
 
 1. 创建对话框时不可以用Application的context，只能用Activity的context
 
-## 4.Handler[[Android面试题/Handler]]
+### 4.Handler[[Android面试题/Handler]]
 
-### Handler引起的内存泄露原因以及最佳解决方案
+#### Handler引起的内存泄露原因以及最佳解决方案
 
 Handler允许我们发送延迟消息，如果在延迟期间用户关闭了Activity，那么该Activity就会泄露。
 
@@ -239,26 +240,26 @@ Handler允许我们发送延迟消息，如果在延迟期间用户关闭了Acti
 
 handler.removeCallbacksAndMessages(null)及时移除所有消息。
 
-### 为什么我们能在主线程直接使用Handler，而不需要创建Looper？
+#### 为什么我们能在主线程直接使用Handler，而不需要创建Looper？
 
 因为在ActivityThread.main()方法中调用了Looper.prepareMainLooper()方法创建了主线程中的Looper，并且调用Looper()方法，所以我们就可以直接使用Handler了。
 
-### 主线程的Looper不允许退出
+#### 主线程的Looper不允许退出
 
 主线程不允许退出，退出就意味APP要挂
 
-### Handler里藏着Callback能干什么？
+#### Handler里藏着Callback能干什么？
 
 Handler.Callback有优先处理消息的权利，当一条消息被Callback处理并拦截（返回true），那么Handler的handleMessage(msg)方法就不会被调用；如果Callback处理了消息，但并没有被拦截，那么就意味着一个消息可以同时被Callback以及Handler处理。
 
-### 创建Message实例的最佳方式
+#### 创建Message实例的最佳方式
 
 尽量复用Message，减少内存消耗：
 
 - 通过Message的静态方法Message.obtain()创建message;
 - 通过Handler的公有方法handler.obtainMessage().
 
-### 子线程里弹Toast的正确姿势
+#### 子线程里弹Toast的正确姿势
 
 本质上是因为Toast的实现依赖于Handler，按子线程使用Handler的要求修改即可，同理还有Dialog(**吐司操作的是window**)
 
@@ -270,7 +271,7 @@ Toast....
 Looper.loop();
 ```
 
-### 妙用Looper机制
+#### 妙用Looper机制
 
 - 将Runnable post到主线程执行
 - 利用Looper判断当前线程是否是主线程。
@@ -290,7 +291,7 @@ public static boolean isMainThread(){
 } 
 ```
 
-### 总结：
+#### 总结：
 
 1. Handler的背后有Looper、MessageQueue支撑，Looper负责消息分发，MessageQueue负责消息管理；
 2. 在创建Handler之前一定要先创建Looper；
@@ -303,14 +304,15 @@ public static boolean isMainThread(){
 优秀文章：
 
 [Handler 都没搞懂，拿什么去跳槽啊？](https://juejin.cn/post/6844903783139393550#heading-15)
+[你真的懂Handler吗？Handler问答](https://juejin.cn/post/6844903624510799886)
 
-## Questions
+### Questions
 
-### 类的初始化顺序依次是：
+#### 类的初始化顺序依次是：
 
 （静态变量、静态代码块）>(变量、代码块)>构造方法
 
-### 通过Gson解析json时，定义javaBean的规则是什么？
+#### 通过Gson解析json时，定义javaBean的规则是什么？
 
 1. 实现序列化Serializable （不继承，会默认生成SerializableId）
 2. 属性私有化，并提供get，set方法

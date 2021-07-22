@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "66bb27ccd2d8d20b",
+        "id": "53b4f0de1a05cdd4",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Android面试题/Android面试题汇总.md",
-            "mode": "source"
+            "file": "Android面试题/02.BroadcastReceiver 与 LocalBroadcastReceiver 有什么区别？.md",
+            "mode": "preview"
           }
         }
       }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "viewpager",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -68,14 +68,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Android面试题/Android面试题汇总.md",
-                "collapseAll": false,
+                "file": "Android面试题/02.BroadcastReceiver 与 LocalBroadcastReceiver 有什么区别？.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Android面试题/Android面试题汇总.md"
+                "file": "Android面试题/02.BroadcastReceiver 与 LocalBroadcastReceiver 有什么区别？.md"
               }
             }
           }
@@ -94,20 +94,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "66bb27ccd2d8d20b",
+  "active": "53b4f0de1a05cdd4",
   "lastOpenFiles": [
-    "Android面试题/Android面试题汇总.md",
-    "Android面试题/RecyclerView.Adapter的几种刷新方式有何不同.md",
-    "Android面试题/Java面试题.md",
-    "Android面试题/HashMap.md",
-    "Android面试题/Handler.md",
-    "Android面试题/03.对于 Context，你了解多少.md",
     "Android面试题/02.BroadcastReceiver 与 LocalBroadcastReceiver 有什么区别？.md",
-    "Android面试题/Http和Https.md",
-    "计算机网络面试题总结.pdf",
-    "Android面试题/01.谈谈 Android 中几种 LaunchMode 的特点和应用场景？.md"
+    "Android面试题/RecyclerView.Adapter的几种刷新方式有何不同.md",
+    "Android面试题/懒加载.md",
+    "未整理/AndroidFaceInterview/Android部分答案/Android部分-13 WebView.md",
+    "Android进阶课程/04讲：编译插桩.md",
+    "Android进阶课程/23讲：handler.md",
+    "Android进阶课程/03讲：字节码层面分析class类文件结构.md",
+    "Android进阶课程/02讲：GC回收机制与分代回收策略.md",
+    "Android面试题/Android面试题汇总.md",
+    "未整理/AndroidFaceInterview/Android部分答案/Android部分-16 View绘制机制.md"
   ]
 }

@@ -1,5 +1,6 @@
 {
   "newFileLocation": "current",
   "defaultViewMode": "preview",
-  "showUnsupportedFiles": false
+  "showUnsupportedFiles": false,
+  "fileSortOrder": "byModifiedTime"
 }
