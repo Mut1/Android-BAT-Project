@@ -306,6 +306,8 @@ public static boolean isMainThread(){
 [Handler 都没搞懂，拿什么去跳槽啊？](https://juejin.cn/post/6844903783139393550#heading-15)
 [你真的懂Handler吗？Handler问答](https://juejin.cn/post/6844903624510799886)
 
+
+### [BitMap](BitMap)
 ### Questions
 
 #### 类的初始化顺序依次是：

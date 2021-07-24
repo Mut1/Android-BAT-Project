@@ -4,15 +4,30 @@
     "type": "split",
     "children": [
       {
-        "id": "53b4f0de1a05cdd4",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Android面试题/02.BroadcastReceiver 与 LocalBroadcastReceiver 有什么区别？.md",
-            "mode": "preview"
+        "id": "e5d0832c17e25ccd",
+        "type": "split",
+        "children": [
+          {
+            "id": "b8ae5490ab4f4174",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Android面试题/04.IntentFilter是什么,有哪些使用场景.md",
+                "mode": "source"
+              }
+            }
+          },
+          {
+            "id": "38b93a8f96843ab0",
+            "type": "leaf",
+            "state": {
+              "type": "mindmap",
+              "state": {}
+            }
           }
-        }
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -68,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Android面试题/02.BroadcastReceiver 与 LocalBroadcastReceiver 有什么区别？.md",
+                "file": "Android面试题/04.IntentFilter是什么,有哪些使用场景.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +100,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Android面试题/02.BroadcastReceiver 与 LocalBroadcastReceiver 有什么区别？.md"
+                "file": "Android面试题/04.IntentFilter是什么,有哪些使用场景.md"
               }
             }
           }
@@ -96,17 +111,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "53b4f0de1a05cdd4",
+  "active": "b8ae5490ab4f4174",
   "lastOpenFiles": [
-    "Android面试题/02.BroadcastReceiver 与 LocalBroadcastReceiver 有什么区别？.md",
+    "Android面试题/04.IntentFilter是什么,有哪些使用场景.md",
+    "Android面试题/05.谈一谈startService和bindService的区别，生命周期以及使用场景.md",
+    "Android面试题/07.Intent传输数据的大小有限制吗？如何解决.md",
+    "Android面试题/08.touch事件分发.md",
+    "Android面试题/03.对于 Context，你了解多少.md",
+    "Android面试题/Handler.md",
+    "Android面试题/线程通信.md",
+    "Android面试题/Java面试题.md",
     "Android面试题/RecyclerView.Adapter的几种刷新方式有何不同.md",
-    "Android面试题/懒加载.md",
-    "未整理/AndroidFaceInterview/Android部分答案/Android部分-13 WebView.md",
-    "Android进阶课程/04讲：编译插桩.md",
-    "Android进阶课程/23讲：handler.md",
-    "Android进阶课程/03讲：字节码层面分析class类文件结构.md",
-    "Android进阶课程/02讲：GC回收机制与分代回收策略.md",
-    "Android面试题/Android面试题汇总.md",
-    "未整理/AndroidFaceInterview/Android部分答案/Android部分-16 View绘制机制.md"
+    "Android面试题/OkHttp.md"
   ]
 }
