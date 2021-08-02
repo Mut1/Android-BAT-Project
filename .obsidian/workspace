@@ -4,30 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "e5d0832c17e25ccd",
-        "type": "split",
-        "children": [
-          {
-            "id": "b8ae5490ab4f4174",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Android面试题/04.IntentFilter是什么,有哪些使用场景.md",
-                "mode": "source"
-              }
-            }
-          },
-          {
-            "id": "38b93a8f96843ab0",
-            "type": "leaf",
-            "state": {
-              "type": "mindmap",
-              "state": {}
-            }
+        "id": "02982a44493143ac",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Android面试题/算法题总结.md",
+            "mode": "source"
           }
-        ],
-        "direction": "horizontal"
+        }
       }
     ],
     "direction": "vertical"
@@ -54,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "viewpager",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -83,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Android面试题/04.IntentFilter是什么,有哪些使用场景.md",
+                "file": "Android面试题/算法题总结.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Android面试题/04.IntentFilter是什么,有哪些使用场景.md"
+                "file": "Android面试题/算法题总结.md"
               }
             }
           }
@@ -109,19 +94,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
-  "active": "b8ae5490ab4f4174",
+  "active": "02982a44493143ac",
   "lastOpenFiles": [
-    "Android面试题/04.IntentFilter是什么,有哪些使用场景.md",
-    "Android面试题/05.谈一谈startService和bindService的区别，生命周期以及使用场景.md",
-    "Android面试题/07.Intent传输数据的大小有限制吗？如何解决.md",
-    "Android面试题/08.touch事件分发.md",
-    "Android面试题/03.对于 Context，你了解多少.md",
-    "Android面试题/Handler.md",
-    "Android面试题/线程通信.md",
+    "Android面试题/算法题总结.md",
+    "Android面试题/Android面试题汇总.md",
+    "Android面试题/未命名.md",
     "Android面试题/Java面试题.md",
-    "Android面试题/RecyclerView.Adapter的几种刷新方式有何不同.md",
-    "Android面试题/OkHttp.md"
+    "Android面试题/03.对于 Context，你了解多少.md",
+    "Android面试题/TCP:IP协议族.md",
+    "Android面试题/06.切换横竖屏时Activity的生命周期.md",
+    "Android面试题/懒加载.md",
+    "Android面试题/BitMap.md",
+    "README.md"
   ]
 }

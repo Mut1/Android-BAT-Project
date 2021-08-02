@@ -37,6 +37,8 @@ StringBuilder 并没有对方法进行加同步锁，所以是非线程安全的
 每次对String类型进行改变的时候，都会产生一个新的String对象，然后将指针指向新的String对象。
 
 StringBuffer每次都会对StringBuffer对象本身进行操作，而不是生成新的对象并改变对象引用。相同情况下使用 StringBuilder 相比使用 StringBuffer 仅能获得 10%~15% 左右的性能提升， 但却要冒多线程不安全的风险。
+#### intern
+https://qwerhuan.gitee.io/2020/12/18/java/java-zhi-string-chong-dian-jie-xi/
 
 ##### 总结
 
@@ -178,4 +180,6 @@ JVM会自动维护八种基本类型的常量池，int常量池中初始化[-128
 #### 简述线程，程序、进程的基本概念。以及他们之 间关系是什么？
 
 #### 线程有哪些基本状态?
+
+### [[Map大家族]]
 

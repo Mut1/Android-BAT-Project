@@ -2,5 +2,7 @@
   "newFileLocation": "current",
   "defaultViewMode": "preview",
   "showUnsupportedFiles": false,
-  "fileSortOrder": "byModifiedTime"
+  "fileSortOrder": "byModifiedTime",
+  "attachmentFolderPath": "",
+  "promptDelete": true
 }

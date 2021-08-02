@@ -1,7 +1,6 @@
+
 ### 1.Activity
-
 #### 1.1生命周期
-
 - onCreate：表示activity正在被创建
 - onRestart：表示activity正在被重新启动
 - onStart：表示activity正在被启动，这时已经可见，但没有出现在前台无法进行交互。
@@ -307,7 +306,9 @@ public static boolean isMainThread(){
 [你真的懂Handler吗？Handler问答](https://juejin.cn/post/6844903624510799886)
 
 
-### [BitMap](BitMap)
+### 5.[[BitMap]]
+### 6.[[事件分发]]
+### 7.[[Glide]]
 ### Questions
 
 #### 类的初始化顺序依次是：

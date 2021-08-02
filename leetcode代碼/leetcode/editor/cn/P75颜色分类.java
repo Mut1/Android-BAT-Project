@@ -57,35 +57,53 @@ package com.leetcode.editor.cn;
 // Related Topics 排序 数组 双指针 
 // 👍 871 👎 0
 
-public class P75SortColors{
+public class P75SortColors {
     public static void main(String[] args) {
         Solution solution = new P75SortColors().new Solution();
         // TO TEST
     }
-    //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public void sortColors(int[] nums) {
 
-        //利用三路快速排序 partition的思路
-        //arr[0...zero]==0 arr[zero+1,i]==1 arr[two,n-1]==2
-        int zero=-1,i=0,two= nums.length;
-        while (i<two){
-            if (nums[i]==0){
-                zero++;
-                swap(nums,zero,i);
-                i++;
+    //leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+        public void sortColors(int[] nums) {
+
+//        //利用三路快速排序 partition的思路
+//        //arr[0...zero]==0 arr[zero+1,i]==1 arr[two,n-1]==2
+//        int zero=-1,i=0,two= nums.length;
+//        while (i<two){
+//            if (nums[i]==0){
+//                zero++;
+//                swap(nums,zero,i);
+//                i++;
+//            }
+//            else if (nums[i]==2){
+//                two--;
+//                swap(nums,i,two);
+//            }
+//            else
+//                i++;
+//        }
+
+            //三指针
+            int i = 0;
+            int l = 0;
+            int r = nums.length - 1;
+            while (i <= r) {
+                int v = nums[i];
+                if (v == 0) {
+                    swap(nums, l++, i++);
+
+                } else if (v == 1) {
+                    i++;
+                } else {
+                    swap(nums, i, r--);
+                }
             }
-            else if (nums[i]==2){
-                two--;
-                swap(nums,i,two);
-            }
-            else
-                i++;
         }
-    }
-        private void swap(int[] nums, int i, int j){
+
+        private void swap(int[] nums, int i, int j) {
             int t = nums[i];
-            nums[i]= nums[j];
+            nums[i] = nums[j];
             nums[j] = t;
         }
 

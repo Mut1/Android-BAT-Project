@@ -1,5 +1,6 @@
 {
   "pinned": [
-    "obsidian-mind-map:app:markmap-preview"
+    "obsidian-mind-map:app:markmap-preview",
+    "convert-url-to-iframe:url-to-iframe"
   ]
 }
