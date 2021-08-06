@@ -322,3 +322,5 @@ public static boolean isMainThread(){
 3. 提供无参构造
 4. 属性名必须与json串中的属性名保持一致（因为Gson解析json串底层用到了java的反射原理）
 
+### 杂项
+#### 接口回调
