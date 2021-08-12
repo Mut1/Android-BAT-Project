@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Android面试题/OkHttp.md",
+            "file": "算法题/排序/冒泡排序.md",
             "mode": "preview"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "singlet",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -48,8 +48,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -69,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Android面试题/OkHttp.md",
+                "file": "算法题/排序/冒泡排序.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Android面试题/OkHttp.md"
+                "file": "算法题/排序/冒泡排序.md"
               }
             }
           },
@@ -106,10 +105,12 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "active": "ac107ec8edde5b77",
   "lastOpenFiles": [
+    "算法题/排序/冒泡排序.md",
     "Android面试题/OkHttp.md",
     "Android面试题/算法题总结.md",
     "Android面试题/MVCMVPMVVM.md",
@@ -118,7 +119,6 @@
     "Android面试题/Java面试题.md",
     "算法题/DFS/113. 路径总和 II.md",
     "算法题/DFS/39. 组合总和.md",
-    "算法题/DFS/5,4,11,2],[5,8,4,5.md",
-    "算法题/数组/50. Pow(x, n).md"
+    "算法题/DFS/5,4,11,2],[5,8,4,5.md"
   ]
 }
