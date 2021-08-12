@@ -324,3 +324,4 @@ public static boolean isMainThread(){
 
 ### 杂项
 #### 接口回调
+#### Serializable和Parcelable的区别
