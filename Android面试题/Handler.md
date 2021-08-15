@@ -1,6 +1,13 @@
 
 ### 面试题
 
+#### [为什么Looper中的Loop()方法不会导致主线程卡死？](https://juejin.cn/post/6844903774096457736)
+
+***原因就是因为耗时操作本身并不会导致主线程卡死, 导致主线程卡死的真正原因是耗时操作之后的触屏操作, 没有在规定的时间内被分发。***
+
+1. 耗时操作本身并不会导致主线程卡死, 导致主线程卡死的真正原因是耗时操作之后的触屏操作, 没有在规定的时间内被分发。
+2. Looper 中的 loop()方法, 他的作用就是从消息队列MessageQueue 中不断地取消息, 然后将事件分发出去。
+
 ##### 可以在子线程创建handler么？
 
 首先要Looper.prepare()
@@ -61,5 +68,10 @@ Handler.dispatchMessage
 
 
 
+优秀文章：
 
+[Handler 都没搞懂，拿什么去跳槽啊？](https://juejin.cn/post/6844903783139393550#heading-15)
+[你真的懂Handler吗？Handler问答](https://juejin.cn/post/6844903624510799886)
+
+[为什么Looper中的Loop()方法不会导致主线程卡死？](https://juejin.cn/post/6844903774096457736)
 

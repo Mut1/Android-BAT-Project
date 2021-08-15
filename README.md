@@ -90,3 +90,13 @@ Android校招面试准备
 ##### 2021-02-25 13:19:38
 
 - 计算机网络更新 笔记 等
+
+```java
+import java.util.*
+  public class main{
+    public static void main(String[] args){
+      System.out.println(ibin);
+    }
+  }
+```
+
