@@ -325,3 +325,7 @@ public static boolean isMainThread(){
 ### 杂项
 #### 接口回调
 #### Serializable和Parcelable的区别
+
+#### Android五层架构
+
+Android 架构:Linux Kernel(Linux内核)、Hardware Abstraction Layer(硬件抽象层)、Libraries(系统运行库或者是c/c++ 核心库)、Application Framework(开发框架包 )、Applications(核心应用程序)

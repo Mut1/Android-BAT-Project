@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Android面试题/Handler.md",
+            "file": "Android面试题/算法题总结.md",
             "mode": "preview"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Android面试题/Handler.md",
+                "file": "Android面试题/算法题总结.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Android面试题/Handler.md"
+                "file": "Android面试题/算法题总结.md"
               }
             }
           },
@@ -110,15 +110,15 @@
   },
   "active": "ac107ec8edde5b77",
   "lastOpenFiles": [
-    "Android面试题/Handler.md",
-    "Android面试题/BitMap.md",
-    "Android面试题/懒加载.md",
     "Android面试题/算法题总结.md",
-    "算法题/DFS/46. 全排列.md",
-    "算法题/排序/冒泡排序.md",
-    "算法题/排序/选择排序.md",
-    "算法题/排序/插入排序.md",
-    "算法题/排序/快速排序.md",
-    "Android面试题/OkHttp.md"
+    "算法题/递归/剑指 Offer 62. 圆圈中最后剩下的数字.md",
+    "算法题/二叉树/102. 二叉树的层序遍历.md",
+    "算法题/二叉树/剑指 Offer 55 - I. 二叉树的深度.md",
+    "Android面试题/线程通信.md",
+    "算法题/242. 有效的字母异位词.md",
+    "算法题/面试题 01.09. 字符串轮转.md",
+    "算法题/面试题16.16 部分排序.md",
+    "算法题/88. 合并两个有序数组.md",
+    "算法题/206.反转链表.md"
   ]
 }

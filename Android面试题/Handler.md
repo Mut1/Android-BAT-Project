@@ -1,5 +1,12 @@
 
 ### 面试题
+优秀文章：
+
+[Handler 都没搞懂，拿什么去跳槽啊？](https://juejin.cn/post/6844903783139393550#heading-15)
+[你真的懂Handler吗？Handler问答](https://juejin.cn/post/6844903624510799886)
+
+[为什么Looper中的Loop()方法不会导致主线程卡死？](https://juejin.cn/post/6844903774096457736)
+
 
 #### [为什么Looper中的Loop()方法不会导致主线程卡死？](https://juejin.cn/post/6844903774096457736)
 
@@ -68,10 +75,4 @@ Handler.dispatchMessage
 
 
 
-优秀文章：
-
-[Handler 都没搞懂，拿什么去跳槽啊？](https://juejin.cn/post/6844903783139393550#heading-15)
-[你真的懂Handler吗？Handler问答](https://juejin.cn/post/6844903624510799886)
-
-[为什么Looper中的Loop()方法不会导致主线程卡死？](https://juejin.cn/post/6844903774096457736)
 
