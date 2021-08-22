@@ -326,6 +326,20 @@ public static boolean isMainThread(){
 #### 接口回调
 #### Serializable和Parcelable的区别
 
+我们知道在Android中，通过Intent传递对象有两种方法：
+1）实现Serializable接口
+2）实现Parcelable接口
+
+serializable使用简单，只要继承接口就好了。但是缺点就是它利用反射，序列化速度较慢。
+
+parcelable速度快，是Android特有的序列化方法。
+
+##### Android为啥要用Parcelable呢？
+
+前面说了，Serializable是Java中的序列化接口，其使用起来简单，但是开销很大。序列化和反序列化过程需要大量的I/O操作。
+
+Parcelable是Android中的序列化方式，更适合Android平台，缺点是使用起来略麻烦，但它的效率很高。网上有人测过速度相差10多倍。所以我们首选使用Parcelable。
+
 #### Android五层架构
 
 Android 架构:Linux Kernel(Linux内核)、Hardware Abstraction Layer(硬件抽象层)、Libraries(系统运行库或者是c/c++ 核心库)、Application Framework(开发框架包 )、Applications(核心应用程序)

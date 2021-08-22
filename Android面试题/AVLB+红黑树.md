@@ -435,3 +435,111 @@ LL----g.left.left
 
 ![image-20210820024737399](../../../Library/Application%20Support/typora-user-images/image-20210820024737399.png)
 
+#### 红黑树的等价变化
+
+![](https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/20210820095041.png)
+
+#### 红黑树vs2-3-4树
+
+![](https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/20210820095418.png)
+
+#### 红黑树的添加
+
+> 红黑树添加时心中一定要有B树
+
+![](https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/image-20210820100618884.png)
+
+##### 添加的所有情况：
+
+![](https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/20210820101043.png)
+
+![](https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/20210820101600.png)
+
+##### 添加-修复性质4-LL\RR
+
+<img src="https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/20210820102150.png"  />
+
+##### 添加-修复性质4-LR\RL
+
+![](https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/20210820102536.png)
+
+##### 添加-修复性质4-上溢-LL
+
+![](https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/20210820103405.png)
+
+##### 添加-修复性质4-上溢-RR
+
+![](https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/20210820103523.png)
+
+##### 添加-修复性质4-上溢-LR
+
+![](https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/20210820103714.png)
+
+##### 添加-修复性质4-上溢-RL
+
+![](https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/20210820103758.png)
+
+##### 总结
+
+记住红黑树的根节点与子树根节点只能是BLACK
+
+#### 红黑树的删除
+
+> 在B树中真正被删除的元素都在叶子节点中
+
+##### 删除-RED节点
+
+![](https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/20210820104539.png)
+
+##### 删除-BLACK节点
+
+![](https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/20210820104708.png)
+
+###### 删除 – 拥有1个RED子节点的BLACK节点
+
+![](https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/20210820105255.png)
+
+###### 删除 – BLACK叶子节点 – sibling为BLACK
+
+- 可以和兄弟节点借
+
+![](https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/20210820110701.png)
+
+- 不可以和兄弟节点借，父节点下来合并
+
+![](https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/20210820115028.png)
+
+###### 删除 – BLACK叶子节点 – sibling为RED
+
+![](https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/20210820122013.png)
+
+##### 删除总结
+
+**B树中，最后真正被删除的元素都在叶子节点中**
+
+- 删除红色节点
+- 删除黑色节点
+  - 拥有两个红色节点的黑色节点
+    - 不可能被直接删除，会找他的子节点替代删除
+    - 因此不需要考虑
+  - 拥有一个红色子节点的黑色节点
+  - 黑色叶子节点
+
+#### 红黑树的平衡
+
+![](https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/20210820125804.png)
+
+因为最长路径是最短路径每一个黑节点后插入一个红节点而已
+
+#### 平均复杂度
+
+<img src="https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/20210820130345.png" style="zoom:50%;" />
+
+#### AVL树 vs 红黑树
+
+![](https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/20210820130417.png)
+
+#### BST vs AVL Tree vs Red Black Tree
+
+![](https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/20210820130445.png)
+

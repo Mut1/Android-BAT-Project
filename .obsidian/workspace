@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Android面试题/算法题总结.md",
+            "file": "算法题/链表/反转链表系列问题.md",
             "mode": "preview"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Android面试题/算法题总结.md",
+                "file": "算法题/链表/反转链表系列问题.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Android面试题/算法题总结.md"
+                "file": "算法题/链表/反转链表系列问题.md"
               }
             }
           },
@@ -110,15 +110,15 @@
   },
   "active": "ac107ec8edde5b77",
   "lastOpenFiles": [
-    "Android面试题/算法题总结.md",
-    "算法题/递归/剑指 Offer 62. 圆圈中最后剩下的数字.md",
-    "算法题/二叉树/102. 二叉树的层序遍历.md",
+    "算法题/链表/反转链表系列问题.md",
     "算法题/二叉树/剑指 Offer 55 - I. 二叉树的深度.md",
-    "Android面试题/线程通信.md",
-    "算法题/242. 有效的字母异位词.md",
-    "算法题/面试题 01.09. 字符串轮转.md",
-    "算法题/面试题16.16 部分排序.md",
-    "算法题/88. 合并两个有序数组.md",
-    "算法题/206.反转链表.md"
+    "算法题/二叉树/102. 二叉树的层序遍历.md",
+    "算法题/二叉树/判断一棵树是否是完全二叉树.md",
+    "算法题/二叉树/翻转二叉树.md",
+    "Android面试题/Android面试题汇总.md",
+    "算法题/141.环形链表.md",
+    "Android面试题/算法题总结.md",
+    "算法题/206.反转链表.md",
+    "算法题/递归/剑指 Offer 62. 圆圈中最后剩下的数字.md"
   ]
 }
