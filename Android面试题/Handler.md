@@ -73,6 +73,62 @@ Handler.dispatchMessage
 
   <img src="https://mut-pic-1305269047.cos.ap-nanjing.myqcloud.com/image-20210719184418119.png" style="zoom:50%;" />
 
+#### Handler为什么会造成内存泄露？
 
+handler创建的时候，是生成了一个内部类，内部类能直接使用外部类的属性和方法，内部类是默认持有外部类的引用，即activity。而在handler调用enqueueMessage方法时，将自己赋予了msg的target属性，所以msg是持有handler的引用的。如果某个消息因为延迟执行或者没有处理完成，消息会一直挂载。msg持有handler，handler持有activity导致activity无法回收，造成了内存泄露。
 
+（Handler 允许我们发送**延时消息**，如果在延时期间用户关闭了 Activity，那么该 Activity 会泄露。
 
+这个泄露是因为 Message 会持有 Handler，而又因为 **Java 的特性，内部类会持有外部类**，使得 Activity 会被 Handler 持有，这样最终就导致 Activity 泄露。）
+
+解决方法：
+
+将handler定义成静态的内部类，在内部持有activity的弱引用，并在activity的onDestroy()中调用handler.removeCallbacksAndMessages(null)及时
+移除所有消息。
+
+#### Hander机制采用的是什么设计模式？
+
+采用的生产者/消费者的设计模式。子线程生成消息，主线程消费消息，MessageQueue为生产仓库。
+
+#### Looper.prepare() :
+
+Looper类提供了Looper.prepare()方法来创建Looper，并且会借助ThreadLoacl来实现与当前线程绑定的功能。Looper.loop()则会开始不断尝试从MessageQueue中获取Message，并分发给对应的Handler。
+
+也就是Handler跟线程的关联是靠Looper来实现的。
+
+####  Message 的分发与处理
+
+Looper.loop()对事件进行分发。
+
+涉及到的方法：
+
+MessageQueue.next()
+
+调用msg.target.dispatchMessage(msg)，这里的msg.target就是发送消息的Handler，这样就可以回调到了Handler那边去了：
+
+tips：dispatchMessage()方法对Runnable的方法做了特殊的处理，如果是，则会直接执行Runnable.run()。否则回调到 Handler 的 handleMessage 方法。
+
+分析：Looper.loop()是个死循环，会不断调用MessageQueue.next() 获取 Message ，并调用 `msg.target.dispatchMessage(msg)` 回到了 Handler 来分发消息，以此来完成消息的回调。
+
+#### 线程切换
+
+```java
+Thread.foo(){
+	Looper.loop()
+	 -> MessageQueue.next()
+ 	  -> Message.target.dispatchMessage()
+ 	   -> Handler.handleMessage()
+}
+```
+
+很明显，handler.handleMessage()方法是在调用Looper.loop()的线程所决定的。
+
+平时我们用的时候从异步线程发送消息到 Handler，这个 Handler 的 `handleMessage()` 方法是在主线程调用的，所以消息就从异步线程切换到了主线程。
+
+#### Handler的消息延时是怎么实现的？
+
+handler在sendMessage()时可以加入需要延迟的时间，looper.loop（）在获取MessageQueue消息的时候会判断当前时间和消息的时间msg.when，如果小于则那就更新等待时间`nextPollTimeoutMillis`,等下次再做比较
+如果时间到了，就取这个消息并返回。
+如果没有消息，nextPollTimeoutMillis被赋为-1，这个循环又执行到`nativePollOnce`继续阻塞。
+
+**https://blog.csdn.net/qq_38366777/article/details/108942036**

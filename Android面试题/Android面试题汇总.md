@@ -343,3 +343,25 @@ Parcelable是Android中的序列化方式，更适合Android平台，缺点是�
 #### Android五层架构
 
 Android 架构:Linux Kernel(Linux内核)、Hardware Abstraction Layer(硬件抽象层)、Libraries(系统运行库或者是c/c++ 核心库)、Application Framework(开发框架包 )、Applications(核心应用程序)
+
+#### 项目里的懒加载
+
+##### viewpager+tablayout
+
+我使用的setUserVisibleHint
+
+可以看到此时setUserVisibleHint的调用时机总是在**初始化时调用，可见时调用，由可见转换成不可见时调用。**
+
+我们一般在Fragment的onActivityCreated中加载数据，这个时候我们可以判断此时的Fragment是否对用户可见，调用fragment.getUserVisibleHint()可以获得isVisibleToUser的值，如果为true，表示可见，就加载数据，如果不可见，就不加载数据了
+
+#### MQTT
+
+MQTT协议是为大量计算能力有限，且工作在低带宽、不可靠的网络的远程传感器和控制设备通讯而设计的协议，它具有以下主要的几项特性：
+
+1，使用发布/订阅消息模式，提供一对多的消息发布，解除应用程序耦合；
+2，对负载内容屏蔽的消息传输；
+3，使用 TCP/IP 提供网络连接；
+4，有三种消息发布服务质量：
+“至多一次”，消息发布完全依赖底层 TCP/IP 网络。会发生消息丢失或重复。这一级别可用于如下情况，环境传感器数据，丢失一次读记录无所谓，因为不久后还会有第二次发送。
+“至少一次”，确保消息到达，但消息重复可能会发生。
+“只有一次”，确保消息到达一次。这一级别可用于如下情况，在计费系统中，消息重复或丢失会导致不正确的结果。
